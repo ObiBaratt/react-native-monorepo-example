@@ -21,9 +21,10 @@ interface MessageProps {
 export const Message = ({ message }: MessageProps) => {
   const displayedDate = useMemo(() => {
     const dayJsDay = dayjs(message.date);
-    const relativeDate = dayJsDay.fromNow();
-    const time = dayJsDay.format("H:mm A");
-    return `${relativeDate} at ${time}`;
+    // broken
+    // const relativeDate = dayJsDay.fromNow();
+    // const time = dayJsDay.format("H:mm A");
+    return `IDK, sometime at sometime`;
   }, [message]);
 
   return (
